@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D945808F1F81F85F00F7DFA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D945808E1F81F85F00F7DFA3 /* AppDelegate.swift */; };
+		D94580941F81F85F00F7DFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94580921F81F85F00F7DFA3 /* Main.storyboard */; };
+		D94580971F81F85F00F7DFA3 /* Walkhome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D94580951F81F85F00F7DFA3 /* Walkhome.xcdatamodeld */; };
+		D94580991F81F85F00F7DFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94580981F81F85F00F7DFA3 /* Assets.xcassets */; };
+		D945809C1F81F85F00F7DFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D945809A1F81F85F00F7DFA3 /* LaunchScreen.storyboard */; };
+		D94580A41F81FCD600F7DFA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94580A31F81FCD600F7DFA3 /* MainViewController.swift */; };
+		D94580A61F82014F00F7DFA3 /* WalkhomePendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94580A51F82014F00F7DFA3 /* WalkhomePendingController.swift */; };
+		D94580A81F8202B700F7DFA3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94580A71F8202B700F7DFA3 /* GradientView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D945808B1F81F85F00F7DFA3 /* Walkhome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkhome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D945808E1F81F85F00F7DFA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D94580931F81F85F00F7DFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D94580961F81F85F00F7DFA3 /* Walkhome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walkhome.xcdatamodel; sourceTree = "<group>"; };
+		D94580981F81F85F00F7DFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D945809B1F81F85F00F7DFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D945809D1F81F85F00F7DFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94580A31F81FCD600F7DFA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D94580A51F82014F00F7DFA3 /* WalkhomePendingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkhomePendingController.swift; sourceTree = "<group>"; };
+		D94580A71F8202B700F7DFA3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D94580881F81F85E00F7DFA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D94580821F81F85E00F7DFA3 = {
+			isa = PBXGroup;
+			children = (
+				D945808D1F81F85F00F7DFA3 /* Walkhome */,
+				D945808C1F81F85F00F7DFA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D945808C1F81F85F00F7DFA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D945808B1F81F85F00F7DFA3 /* Walkhome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D945808D1F81F85F00F7DFA3 /* Walkhome */ = {
+			isa = PBXGroup;
+			children = (
+				D945808E1F81F85F00F7DFA3 /* AppDelegate.swift */,
+				D94580921F81F85F00F7DFA3 /* Main.storyboard */,
+				D94580A31F81FCD600F7DFA3 /* MainViewController.swift */,
+				D94580A51F82014F00F7DFA3 /* WalkhomePendingController.swift */,
+				D94580A71F8202B700F7DFA3 /* GradientView.swift */,
+				D94580981F81F85F00F7DFA3 /* Assets.xcassets */,
+				D945809A1F81F85F00F7DFA3 /* LaunchScreen.storyboard */,
+				D945809D1F81F85F00F7DFA3 /* Info.plist */,
+				D94580951F81F85F00F7DFA3 /* Walkhome.xcdatamodeld */,
+			);
+			path = Walkhome;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D945808A1F81F85E00F7DFA3 /* Walkhome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94580A01F81F85F00F7DFA3 /* Build configuration list for PBXNativeTarget "Walkhome" */;
+			buildPhases = (
+				D94580871F81F85E00F7DFA3 /* Sources */,
+				D94580881F81F85E00F7DFA3 /* Frameworks */,
+				D94580891F81F85E00F7DFA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Walkhome;
+			productName = Walkhome;
+			productReference = D945808B1F81F85F00F7DFA3 /* Walkhome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D94580831F81F85E00F7DFA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = kirkbyo;
+				TargetAttributes = {
+					D945808A1F81F85E00F7DFA3 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D94580861F81F85E00F7DFA3 /* Build configuration list for PBXProject "Walkhome" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D94580821F81F85E00F7DFA3;
+			productRefGroup = D945808C1F81F85F00F7DFA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D945808A1F81F85E00F7DFA3 /* Walkhome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D94580891F81F85E00F7DFA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D945809C1F81F85F00F7DFA3 /* LaunchScreen.storyboard in Resources */,
+				D94580991F81F85F00F7DFA3 /* Assets.xcassets in Resources */,
+				D94580941F81F85F00F7DFA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D94580871F81F85E00F7DFA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94580971F81F85F00F7DFA3 /* Walkhome.xcdatamodeld in Sources */,
+				D945808F1F81F85F00F7DFA3 /* AppDelegate.swift in Sources */,
+				D94580A81F8202B700F7DFA3 /* GradientView.swift in Sources */,
+				D94580A41F81FCD600F7DFA3 /* MainViewController.swift in Sources */,
+				D94580A61F82014F00F7DFA3 /* WalkhomePendingController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D94580921F81F85F00F7DFA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D94580931F81F85F00F7DFA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D945809A1F81F85F00F7DFA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D945809B1F81F85F00F7DFA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D945809E1F81F85F00F7DFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D945809F1F81F85F00F7DFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D94580A11F81F85F00F7DFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N92EHKU84;
+				INFOPLIST_FILE = Walkhome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirkbyo.Walkhome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D94580A21F81F85F00F7DFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N92EHKU84;
+				INFOPLIST_FILE = Walkhome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirkbyo.Walkhome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D94580861F81F85E00F7DFA3 /* Build configuration list for PBXProject "Walkhome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D945809E1F81F85F00F7DFA3 /* Debug */,
+				D945809F1F81F85F00F7DFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94580A01F81F85F00F7DFA3 /* Build configuration list for PBXNativeTarget "Walkhome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94580A11F81F85F00F7DFA3 /* Debug */,
+				D94580A21F81F85F00F7DFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D94580951F81F85F00F7DFA3 /* Walkhome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D94580961F81F85F00F7DFA3 /* Walkhome.xcdatamodel */,
+			);
+			currentVersion = D94580961F81F85F00F7DFA3 /* Walkhome.xcdatamodel */;
+			path = Walkhome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D94580831F81F85E00F7DFA3 /* Project object */;
+}
