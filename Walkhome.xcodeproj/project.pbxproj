@@ -14,7 +14,7 @@
 		D945809C1F81F85F00F7DFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D945809A1F81F85F00F7DFA3 /* LaunchScreen.storyboard */; };
 		D94580A41F81FCD600F7DFA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94580A31F81FCD600F7DFA3 /* MainViewController.swift */; };
 		D94580A61F82014F00F7DFA3 /* WalkhomePendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94580A51F82014F00F7DFA3 /* WalkhomePendingController.swift */; };
-		D94580A81F8202B700F7DFA3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94580A71F8202B700F7DFA3 /* GradientView.swift */; };
+		D9A9911A1F89A2D900A0412B /* WalkhomeRequestedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A991191F89A2D900A0412B /* WalkhomeRequestedController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		D945809D1F81F85F00F7DFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94580A31F81FCD600F7DFA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D94580A51F82014F00F7DFA3 /* WalkhomePendingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkhomePendingController.swift; sourceTree = "<group>"; };
-		D94580A71F8202B700F7DFA3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D9A991191F89A2D900A0412B /* WalkhomeRequestedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalkhomeRequestedController.swift; path = Controllers/WalkhomeRequestedController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 			children = (
 				D945808E1F81F85F00F7DFA3 /* AppDelegate.swift */,
 				D94580921F81F85F00F7DFA3 /* Main.storyboard */,
+				D9A991191F89A2D900A0412B /* WalkhomeRequestedController.swift */,
 				D94580A31F81FCD600F7DFA3 /* MainViewController.swift */,
 				D94580A51F82014F00F7DFA3 /* WalkhomePendingController.swift */,
-				D94580A71F8202B700F7DFA3 /* GradientView.swift */,
 				D94580981F81F85F00F7DFA3 /* Assets.xcassets */,
 				D945809A1F81F85F00F7DFA3 /* LaunchScreen.storyboard */,
 				D945809D1F81F85F00F7DFA3 /* Info.plist */,
@@ -145,9 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A9911A1F89A2D900A0412B /* WalkhomeRequestedController.swift in Sources */,
 				D94580971F81F85F00F7DFA3 /* Walkhome.xcdatamodeld in Sources */,
 				D945808F1F81F85F00F7DFA3 /* AppDelegate.swift in Sources */,
-				D94580A81F8202B700F7DFA3 /* GradientView.swift in Sources */,
 				D94580A41F81FCD600F7DFA3 /* MainViewController.swift in Sources */,
 				D94580A61F82014F00F7DFA3 /* WalkhomePendingController.swift in Sources */,
 			);

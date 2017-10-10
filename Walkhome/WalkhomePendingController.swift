@@ -16,12 +16,9 @@ class WalkhomePendingController: UIViewController {
         super.viewDidLoad()
         setShadow(view: walkhomeInformationView)
         setShadow(view: messageView)
-        
-        let gradientView = GradientView()
-        gradientView.frame = CGRect(x: 0, y: self.view.frame.height - 300, width: self.view.frame.width, height: 300)
-        // Set the gradient colors
-        gradientView.colors = [UIColor.white, UIColor(red:0.820, green:0.937, blue:1.000, alpha:1.000)]
-        view.insertSubview(gradientView, at: 0)
+        let tapGesture = UITapGestureRecognizer()
+        tapGesture.addTarget(self, action: #selector(messageViewTap))
+        messageView.addGestureRecognizer(tapGesture)
     }
     
     func setShadow(view: UIView) {
@@ -30,5 +27,10 @@ class WalkhomePendingController: UIViewController {
         view.layer.shadowOffset = CGSize(width: 0, height: 2)
         view.layer.shadowOpacity = 0.5
         view.layer.shadowRadius = 5
+    }
+    
+    @objc func messageViewTap() {
+        print("hello")
+        self.performSegue(withIdentifier: "messageController", sender: nil)
     }
 }

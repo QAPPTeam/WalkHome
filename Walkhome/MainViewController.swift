@@ -9,22 +9,15 @@
 import UIKit
 import MapKit
 
-class MainViewController: UIViewController {
-    @IBOutlet weak var map: MKMapView!
+class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var mapView: UIView!
-    @IBOutlet weak var requestButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var requestAlertView: UIView!
+    @IBOutlet weak var requestAlertViewBottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setShadow(view: mapView)
-        setShadow(view: requestButton)
-        
-        let gradientView = GradientView()
-        gradientView.frame = CGRect(x: 0, y: self.view.frame.height - 300, width: self.view.frame.width, height: 300)
-        // Set the gradient colors
-        gradientView.colors = [UIColor.white, UIColor(red:0.820, green:0.937, blue:1.000, alpha:1.000)]
-        view.insertSubview(gradientView, at: 0)
+        displayRequestAlert(show: false, animate: false)
     }
     
     func setShadow(view: UIView) {
@@ -33,5 +26,100 @@ class MainViewController: UIViewController {
         view.layer.shadowOffset = CGSize(width: 0, height: 2)
         view.layer.shadowOpacity = 0.5
         view.layer.shadowRadius = 5
+    }
+    
+    // MARK: - Actions
+    @IBAction func confrimRequestAction() {
+        self.performSegue(withIdentifier: "matchController", sender: nil)
+        displayRequestAlert(show: false)
+    }
+    
+    @IBAction func cancelRequestAction() {
+        displayRequestAlert(show: false)
+    }
+    
+    func displayRequestAlert(show: Bool, animate: Bool=true) {
+        if show {
+            self.requestAlertViewBottomConstraint.constant = 14
+        } else {
+            self.requestAlertViewBottomConstraint.constant = -160
+        }
+        
+        func animateView() {
+            if show {
+                self.collectionView.alpha = 0.0
+            } else {
+                self.collectionView.alpha = 1.0
+            }
+            self.view.layoutIfNeeded()
+        }
+        if animate {
+            UIView.animate(withDuration: 0.4, animations: animateView)
+        } else { animateView() }
+    }
+    
+    @IBAction func personelButton() {
+        let alertController = UIAlertController(title: "Walkhome ID", message: "Enter your walkhome personel identification number:", preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
+            if let field = alertController.textFields?[0] {
+                // store your data
+                UserDefaults.standard.set(field.text, forKey: "walkhomeID")
+                UserDefaults.standard.synchronize()
+            } else {
+                // user did not fill field
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Personel ID #"
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    // MARK: - CollectionView Delegates
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        switch indexPath.item {
+        case 0:
+            return CGSize(width: 320, height: 100)
+        case 1:
+            return CGSize(width: 100, height: 100)
+        default:
+            return CGSize(width: 320, height: 100)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.item {
+        case 0:
+            displayRequestAlert(show: true)
+        default:
+            break
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var identifier = "requestCell"
+        if indexPath.item == 1 {
+            identifier = "callCell"
+        }
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: IndexPath(item: indexPath.item, section: indexPath.section))
+        cell.layer.cornerRadius = 5
+        return cell
     }
 }
